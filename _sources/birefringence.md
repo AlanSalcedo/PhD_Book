@@ -1,3 +1,3 @@
-#Birefringence in ARA
+# Birefringence in ARA
 
 Work on birefringence.

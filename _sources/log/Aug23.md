@@ -1,1 +1,1 @@
-#Log updates for August 2023
+# Log updates for August 2023
