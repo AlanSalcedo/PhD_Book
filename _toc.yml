@@ -4,6 +4,10 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: five_stations
+- file: icara
+- file: birefringence
+- file: log 
+  sections:
+  - file: log/Aug23
+  - file: log/Sep23
