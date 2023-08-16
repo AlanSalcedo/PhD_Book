@@ -1,1 +1,1 @@
-# For research log?
+# Research log
