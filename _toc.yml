@@ -10,5 +10,5 @@ chapters:
 - file: log 
   sections:
   - file: log/2023
-	sections: 
+	subsections: 
 	- file: log/2023/Aug23
