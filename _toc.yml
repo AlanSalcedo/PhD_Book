@@ -9,5 +9,6 @@ chapters:
 - file: birefringence
 - file: log 
   sections:
-  - file: log/Aug23
-  - file: log/Sep23
+  - file: log/2023
+	sections: 
+	- file: log/2023/Aug23
