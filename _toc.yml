@@ -9,6 +9,4 @@ chapters:
 - file: birefringence
 - file: log 
   sections:
-  - file: log/2023
-	subsections: 
-	- file: log/2023/Aug23
+  - file: log/2023/Aug23.md
