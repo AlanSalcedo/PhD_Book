@@ -4,7 +4,7 @@
 
 ### Summary
 
-1.  **Worked through `cpol.cc` to find how time differences in rays are calculated.** 
+1.  Worked through `cpol.cc` to find how time differences in rays are calculated. 
 
 
 ### Birefringence 
@@ -30,7 +30,7 @@ where length is given in L1560 by:
 
 > `double length=rhat_thisstep.Mag()` 
 
-TVector3 `rhat_thisstep` is filled in L 1489-1491 as follows:
+TVector3 `rhat_thisstep` is filled in L1489-1491 as follows:
 
 > `rhat_thisstep[0]=-1.*(res[UZAIRSTEP]-res[0])*yhat[0]`  
         `rhat_thisstep[1]=-1.*(res[UZAIRSTEP]-res[0])*yhat[1]`  
