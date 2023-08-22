@@ -2,10 +2,13 @@
 
 ## Aug. 21st - Aug. 25th
 
+### Summary
 
-1. Birefringence 
+1.  **Worked through `cpol.cc` to find how time differences in rays are calculated.** 
 
-* **Went through `cpol.cc` to find how time differences in rays are calculated.** 
+
+### Birefringence 
+
 
 Amy's [birefringence paper](https://arxiv.org/abs/2110.09015) shows time differences between the two ways emitted from the SPICE transmitter pulsers from different heights arriving at each station in Fig. 9.
 
