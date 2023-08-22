@@ -50,7 +50,7 @@ where BIAXIAL is a configuration value specified by the user (**I should add thi
 
 Vector `nvec_thisstep` has size 3 and is filled by `gn1`, `gn2`, and `gn3` in L1483-1485. Now, for instance, `gn1` is a TGraph of size `n1vec.size()` filled with `vdepths_n1[0]` and `n1vec[0]`. Finally, vector `n1vec` is filled between lines L649-783 by loading data from `n1.txt` after some data-conditioning and smoothing.
 
-** This is it for tracing how time differences are calculated, right? **
+**This is it for tracing how time differences are calculated, right?**
 
 Next, we have to look at some variables used for loops that I have ignored so far, namely `UZAIRSTEP` and `istep`. 
 
