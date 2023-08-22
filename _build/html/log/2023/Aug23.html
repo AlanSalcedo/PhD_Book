@@ -374,7 +374,9 @@ document.write(`
 <ol class="arabic simple">
 <li><p>Birefringence</p></li>
 </ol>
-<p>Went through <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> to find how time differences in rays are calculated.</p>
+<ul class="simple">
+<li><p><strong>Went through <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> to find how time differences in rays are calculated.</strong></p></li>
+</ul>
 <p>Amy’s <a class="reference external" href="https://arxiv.org/abs/2110.09015">birefringence paper</a> shows time differences between the two ways emitted from the SPICE transmitter pulsers from different heights arriving at each station in Fig. 9.</p>
 <p>Fig. 9 -and all other figures- is produced by <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> in ~L4484 and called <code class="docutils literal notranslate"><span class="pre">h9</span></code>. Then, this is filled with information from TGraph <code class="docutils literal notranslate"><span class="pre">g_sumphase</span></code>. <strong>Time differences</strong> are contained in <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code> inside <code class="docutils literal notranslate"><span class="pre">g_sumphase</span></code> as seen in L3540.</p>
 <p>The vector <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code> is filled in L2357 with:</p>
@@ -383,7 +385,7 @@ document.write(`
 </div></blockquote>
 <p>with time differences in ns. Then double <code class="docutils literal notranslate"><span class="pre">sumphase</span></code> is calculated in L2214 as:</p>
 <blockquote>
-<div><p>‘sumphase=deltantimeslength_alongpath*PI/TMath::C()*freq’</p>
+<div><p><code class="docutils literal notranslate"><span class="pre">sumphase=deltantimeslength_alongpath*PI/TMath::C()*freq</span></code></p>
 </div></blockquote>
 <p>where <code class="docutils literal notranslate"><span class="pre">freq</span></code> is defined in L185 as 160 MHz (<strong>also read in <code class="docutils literal notranslate"><span class="pre">if-statement</span></code> in L201?</strong>), TMath::C() is the speed of light in vacuum (<strong>Why not use CLIGHT in L39?</strong>). We keep going with <code class="docutils literal notranslate"><span class="pre">deltantimeslength_alongpath</span></code> being calculated in L2159 as:</p>
 <blockquote>
@@ -396,7 +398,8 @@ document.write(`
 <p>TVector3 <code class="docutils literal notranslate"><span class="pre">rhat_thisstep</span></code> is filled in L 1489-1491 as follows:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">rhat_thisstep[0]=-1.*(res[UZAIRSTEP]-res[0])*yhat[0]</span></code><br />
-‘rhat_thisstep[1]=-1.*(res[UZAIRSTEP]-res[0])*yhat[1]<code class="docutils literal notranslate">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">'rhat_thisstep[2]=-1.*(zs[UZAIRSTEP]-zs[0])</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">rhat_thisstep[1]=-1.*(res[UZAIRSTEP]-res[0])*yhat[1]</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">rhat_thisstep[2]=-1.*(zs[UZAIRSTEP]-zs[0])</span></code></p>
 </div></blockquote>
 <p>Here vector <code class="docutils literal notranslate"><span class="pre">res</span></code> and <code class="docutils literal notranslate"><span class="pre">zs</span></code> are y- and z- coordinates in a ray and are filled in L1394-1420 by <code class="docutils literal notranslate"><span class="pre">GetFullDirectRayPath(z0,</span> <span class="pre">x1,</span> <span class="pre">z1,</span> <span class="pre">paramsd[3],</span> <span class="pre">res,</span> <span class="pre">zs)</span></code>. The values <code class="docutils literal notranslate"><span class="pre">z0</span></code>, <code class="docutils literal notranslate"><span class="pre">x1</span></code>, <code class="docutils literal notranslate"><span class="pre">z1</span></code> are the <strong>initial and final(?)</strong> positions of the SPICE pulser and <code class="docutils literal notranslate"><span class="pre">paramsd[3]</span></code> is filled by <code class="docutils literal notranslate"><span class="pre">GetDirectRayPar(z0,x1,z1)</span></code>. <code class="docutils literal notranslate"><span class="pre">paramsd[3]</span></code> contains something calles <code class="docutils literal notranslate"><span class="pre">lvalueD</span></code> regarding some L parameter (<strong>What is this?</strong>). Now TVector3 <code class="docutils literal notranslate"><span class="pre">yhat</span></code> is the horizontal direction from the pulser to the station according to L1470 later turned to a unit vector. <strong>Note: the magnitude of <code class="docutils literal notranslate"><span class="pre">rhat_thisstep</span></code> is set to 1 after <code class="docutils literal notranslate"><span class="pre">length</span></code> is calculated</strong>.</p>
 <p>Now let’s go back to:</p>
