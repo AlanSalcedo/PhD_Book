@@ -1,5 +1,6 @@
 # August 2023
 
+<<<<<<< HEAD
 ## Aug. 21st - Aug. 25th
 
 1. Birefringence 
@@ -41,3 +42,6 @@ Now let's go back to:
 the value `notflipped` is given by the function `Flipped(theta_e1, theta_e1_start)` in L2156(**What is this telling us?**) where `theta_e1` is given by `getManyAnglesontheClock()` in L2130 (**This deals with rotations so we could ignore flipping for work on time differences, right?**).
 
 
+=======
+This will contain my weekly research updates for the month of August.
+>>>>>>> ee54626c3f6d02c22699dee7663e55356f6a3301
