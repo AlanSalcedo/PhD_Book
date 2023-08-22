@@ -36,7 +36,7 @@ TVector3 `rhat_thisstep` is filled in L1489-1491 as follows:
         `rhat_thisstep[1]=-1.*(res[UZAIRSTEP]-res[0])*yhat[1]`  
         `rhat_thisstep[2]=-1.*(zs[UZAIRSTEP]-zs[0])`
 
-Here vector `res` and `zs` are y- and z- coordinates in a ray and are filled in L1394-1420 by `GetFullDirectRayPath(z0, x1, z1, paramsd[3], res, zs)`. The values `z0`, `x1`, `z1` are the **initial and final(?)** positions of the SPICE pulser and `paramsd[3]` is filled by `GetDirectRayPar(z0,x1,z1)`. Variable `paramsd[3]` contains something calles `lvalueD` regarding some L parameter (**What is this?**). Now TVector3 `yhat` is the horizontal direction from the pulser to the station according to L1470 later turned to a unit vector. **Note: the magnitude of `rhat_thisstep` is set to 1 after `length` is calculated**.
+Here vector `res` and `zs` are y- and z- coordinates in a ray and are filled in L1394-1420 by `GetFullDirectRayPath(z0, x1, z1, paramsd[3], res, zs)`. The values `z0`, `x1`, `z1` are the positions of the SPICE pulser and ARA station, and `paramsd[3]` is filled by `GetDirectRayPar(z0,x1,z1)`. Variable `paramsd[3]` contains something calles `lvalueD` regarding some L parameter (**What is this?**). Now TVector3 `yhat` is the horizontal direction from the pulser to the station according to L1470 later turned to a unit vector. **Note: the magnitude of `rhat_thisstep` is set to 1 after `length` is calculated**.
 
 Now let's go back to:
 
@@ -48,4 +48,10 @@ the value `notflipped` is given by the function `Flipped(theta_e1, theta_e1_star
 
 where BIAXIAL is a configuration value specified by the user (**I should add this to `Settings.cc` in AraSim**), `nvec_thisstep` contains the values defining the indicatrix, `angle_iceflow` is defined in L273 by `const double angle_iceflow=(36.+ (46./60.) + (23./3600.) + 90.)/DEGRAD`, and variables `n_e1`, `n_e2`, `p_e1`, `p_e2` are the indices of refraction felt by the two rays and their polarizations. We need to go back and look at `nvec_thisstep` separately.
 
-Vector `nvec_thisstep` has size 3 and is filled by `gn1`, `gn2`, and `gn3` in L1483-1485. Now, for instance, `gn1` is a TGraph of size `n1vec.size()` filled with `vdepths_n1[0]` and `n1vec[0]`.  
+Vector `nvec_thisstep` has size 3 and is filled by `gn1`, `gn2`, and `gn3` in L1483-1485. Now, for instance, `gn1` is a TGraph of size `n1vec.size()` filled with `vdepths_n1[0]` and `n1vec[0]`. Finally, vector `n1vec` is filled between lines L649-783 by loading data from `n1.txt` after some data-conditioning and smoothing.
+
+** This is it for tracing how time differences are calculated, right? **
+
+Next, we have to look at some variables used for loops that I have ignored so far, namely `UZAIRSTEP` and `istep`. 
+
+Recall that the time differences are in vector `vtimediff`. This is in L2357 so we'll check the code up to this point.
