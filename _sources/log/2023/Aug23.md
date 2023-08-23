@@ -4,7 +4,11 @@
 
 ### Summary
 
-1.  Worked through `cpol.cc` to find how time differences in rays are calculated. 
+1.  Worked through `cpol.cc` to find how time differences in rays are calculated. I think that I have studied this completely. Notes about this are written on the Birefringence section below.  
+
+2.  Studied Maya's birefringence branch that seems to take parts of `cpol.cc` and convert them into functions defined in `birefringence.cc`.
+
+--- 
 
 
 ### Birefringence 
@@ -54,4 +58,4 @@ Vector `nvec_thisstep` has size 3 and is filled by `gn1`, `gn2`, and `gn3` in L1
 
 Next, we have to look at some variables used for loops that I have ignored so far, namely `UZAIRSTEP` and `istep`. 
 
-Recall that the time differences are in vector `vtimediff`. This is in L2357 so finished reading the code of to this point.
+Recall that the time differences are in vector `vtimediff`. This is in L2357 so I finished reading the code of to this point.
