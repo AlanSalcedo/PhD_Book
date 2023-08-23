@@ -378,9 +378,11 @@ document.write(`
 <section id="summary">
 <h3>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
-<li><p>Worked through <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> to find how time differences in rays are calculated.</p></li>
+<li><p>Worked through <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> to find how time differences in rays are calculated. I think that I have studied this completely. Notes about this are written on the Birefringence section below.</p></li>
+<li><p>Studied Maya’s birefringence branch that seems to take parts of <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> and convert them into functions defined in <code class="docutils literal notranslate"><span class="pre">birefringence.cc</span></code>.</p></li>
 </ol>
 </section>
+<hr class="docutils" />
 <section id="birefringence">
 <h3>Birefringence<a class="headerlink" href="#birefringence" title="Permalink to this headline">#</a></h3>
 <p>Amy’s <a class="reference external" href="https://arxiv.org/abs/2110.09015">birefringence paper</a> shows time differences between the two ways emitted from the SPICE transmitter pulsers from different heights arriving at each station in Fig. 9.</p>
@@ -420,7 +422,7 @@ document.write(`
 <p>Vector <code class="docutils literal notranslate"><span class="pre">nvec_thisstep</span></code> has size 3 and is filled by <code class="docutils literal notranslate"><span class="pre">gn1</span></code>, <code class="docutils literal notranslate"><span class="pre">gn2</span></code>, and <code class="docutils literal notranslate"><span class="pre">gn3</span></code> in L1483-1485. Now, for instance, <code class="docutils literal notranslate"><span class="pre">gn1</span></code> is a TGraph of size <code class="docutils literal notranslate"><span class="pre">n1vec.size()</span></code> filled with <code class="docutils literal notranslate"><span class="pre">vdepths_n1[0]</span></code> and <code class="docutils literal notranslate"><span class="pre">n1vec[0]</span></code>. Finally, vector <code class="docutils literal notranslate"><span class="pre">n1vec</span></code> is filled between lines L649-783 by loading data from <code class="docutils literal notranslate"><span class="pre">n1.txt</span></code> after some data-conditioning and smoothing.</p>
 <p><strong>This is it for tracing how time differences are calculated, right?</strong></p>
 <p>Next, we have to look at some variables used for loops that I have ignored so far, namely <code class="docutils literal notranslate"><span class="pre">UZAIRSTEP</span></code> and <code class="docutils literal notranslate"><span class="pre">istep</span></code>.</p>
-<p>Recall that the time differences are in vector <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code>. This is in L2357 so finished reading the code of to this point.</p>
+<p>Recall that the time differences are in vector <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code>. This is in L2357 so I finished reading the code of to this point.</p>
 </section>
 </section>
 </section>
