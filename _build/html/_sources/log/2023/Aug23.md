@@ -8,6 +8,8 @@
 
 2.  Studied Maya's birefringence branch that seems to take parts of `cpol.cc` and convert them into functions defined in `birefringence.cc`.
 
+3.  Added `Birefringence.cc` and `Birefringence.hh` into AraSim. I've only put two functions in there so far: `Read_Indicatrix_par()` and `Smooth_Indicatrix_par()` which are tweaked functions modularized from `cpol.cc` by Maya. Also, added `/data/birefringence` folder with the n1, n2, n3 data. See changes on this [GitHub PR](https://github.com/AlanSalcedo/AraSim/tree/Birefringence_Alan_New). 
+
 --- 
 
 
