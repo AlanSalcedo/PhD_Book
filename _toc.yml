@@ -4,18 +4,18 @@
 format: jb-book
 root: intro
 chapters:
-- file: 
+- file: topics/birefringence.md 
   sections: 
   - file: birefringence/2023/Aug23.md
--file:
+-file: topics/five_stations.md
   sections:
   - file: five_stations/2023/Aug23.md
--file:
+-file: topics/operations.md
   sections:
   - file: operations/2023/Aug23.md
-- file:
+- file: topics/coincidences.md
   sections: 
   - file: coincidences/2023/Aug23.md 
-- file: 
+- file: topics/building.md
   sections:
   - file: building/2023/Aug23.md  
