@@ -108,6 +108,6 @@ Here how it looks:
 ```{image} ../images/straightened_bicone.png
 :alt: straightened_bicone
 :class: bg-primary mb-1
-:width: 300px
+:width: 800px
 :align: center
 ```
