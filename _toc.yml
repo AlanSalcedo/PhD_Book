@@ -18,4 +18,7 @@ chapters:
   - file: coincidences/2023/Aug23.md 
 - file: topics/building.md
   sections:
-  - file: building/2023/Aug23.md  
+  - file: building/2023/Aug23.md 
+-file: log.md
+  sections:
+  - file: log/2023/Aug.23 
