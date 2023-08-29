@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html >
 
   <head>
     <meta charset="utf-8" />
@@ -44,7 +44,6 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -66,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="prev" title="Research log" href="../../log.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
   
   
@@ -361,11 +360,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#birefringence-how-time-differences-are-calculated">Birefringence: How time differences are calculated</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aug-28th-sep-1st">Aug. 28th - Sep. 1st</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aug-28th-sep-1st">Aug. 28th - Sep. 1st</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Summary</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ara-5-station-analysis-a1-simulations">ARA 5-Station Analysis: A1 Simulations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ara-5-station-analysis-a1-simulations">ARA 5-Station Analysis: A1 Simulations</a></li>
 </ul>
             </nav>
         </div>
@@ -378,12 +377,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="august-2023">
-<h1>August 2023<a class="headerlink" href="#august-2023" title="Permalink to this heading">#</a></h1>
+<h1>August 2023<a class="headerlink" href="#august-2023" title="Permalink to this headline">#</a></h1>
 <hr class="docutils" />
 <section id="aug-21st-aug-25th">
-<h2>Aug. 21st - Aug. 25th<a class="headerlink" href="#aug-21st-aug-25th" title="Permalink to this heading">#</a></h2>
+<h2>Aug. 21st - Aug. 25th<a class="headerlink" href="#aug-21st-aug-25th" title="Permalink to this headline">#</a></h2>
 <section id="summary">
-<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h3>
+<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
 <li><p>Worked through <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> to find how time differences in rays are calculated. I think that I have studied this completely. Notes about this are written on the Birefringence section below.</p></li>
 <li><p>Studied Maya’s birefringence branch that seems to take parts of <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> and convert them into functions defined in <code class="docutils literal notranslate"><span class="pre">birefringence.cc</span></code>.</p></li>
@@ -392,7 +391,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="birefringence-how-time-differences-are-calculated">
-<h3>Birefringence: How time differences are calculated<a class="headerlink" href="#birefringence-how-time-differences-are-calculated" title="Permalink to this heading">#</a></h3>
+<h3>Birefringence: How time differences are calculated<a class="headerlink" href="#birefringence-how-time-differences-are-calculated" title="Permalink to this headline">#</a></h3>
 <p>Amy’s <a class="reference external" href="https://arxiv.org/abs/2110.09015">birefringence paper</a> shows time differences between the two ways emitted from the SPICE transmitter pulsers from different heights arriving at each station in Fig. 9.</p>
 <p>Fig. 9 -and all other figures- is produced by <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> in ~L4484 and called <code class="docutils literal notranslate"><span class="pre">h9</span></code>. Then, this is filled with information from TGraph <code class="docutils literal notranslate"><span class="pre">g_sumphase</span></code>. <strong>Time differences</strong> are contained in <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code> inside <code class="docutils literal notranslate"><span class="pre">g_sumphase</span></code> as seen in L3540.</p>
 <p>The vector <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code> has dimension of number of stations and it is filled in L2357 with:</p>
@@ -435,16 +434,28 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="aug-28th-sep-1st">
-<h2>Aug. 28th - Sep. 1st<a class="headerlink" href="#aug-28th-sep-1st" title="Permalink to this heading">#</a></h2>
+<h2>Aug. 28th - Sep. 1st<a class="headerlink" href="#aug-28th-sep-1st" title="Permalink to this headline">#</a></h2>
+</section>
 <section id="id1">
-<h3>Summary<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h2>Summary<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Updated A1 simulations to use Chiba’s antenna model and put files on <a class="reference external" href="https://github.com/AlanSalcedo/A1_simulations">GitHub</a> to facilitate their use by other people.</p></li>
 </ol>
-</section>
-</section>
 <section id="ara-5-station-analysis-a1-simulations">
-<h2>ARA 5-Station Analysis: A1 Simulations<a class="headerlink" href="#ara-5-station-analysis-a1-simulations" title="Permalink to this heading">#</a></h2>
+<h3>ARA 5-Station Analysis: A1 Simulations<a class="headerlink" href="#ara-5-station-analysis-a1-simulations" title="Permalink to this headline">#</a></h3>
+<p>For our 5-station analysis, we need simulations for detecting events at each stationusing the most updated signal-chain gain responses, noise models, channel masking, antenna positions and corresponding cable delays. I volunteered to help Mohammad Seikh (from U. Kansas) running simulations for A1.</p>
+<p>Before being able to run simulations on Condor, I needed to modify AraSim to corresctly simulate A1 having an ATRI board in its DAQ box to ensure data digitization in simulations is similar to current real data. All changes are documented <a class="reference external" href="https://aradocs.wipac.wisc.edu/cgi-bin/DocDB/ShowDocument?docid=2869">here</a> and in this <a class="reference external" href="https://github.com/ara-software/AraSim/pull/84">GitHub PR</a>.</p>
+<p>Now running simulations is fairly straightforward using the following <a class="reference external" href="https://github.com/AlanSalcedo/A1_simulations">directory</a>. Just <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> it into your Cobalt account, ssh into <code class="docutils literal notranslate"><span class="pre">username&#64;submitter.icecube.wisc.edu</span></code>, copy any of the <code class="docutils literal notranslate"><span class="pre">batch_run_A1_%key</span></code> directories into <code class="docutils literal notranslate"><span class="pre">/scratch/username</span></code> (<code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">signal</span></code> performs signal + noise simulations, <code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">noise</span></code> performs noise only simulations, and <code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">sim_test</span></code> is made to test smaller runs before sending larger ones), cd into <code class="docutils literal notranslate"><span class="pre">scratch/username/batch_run_A1_%key</span></code> and run dagmans with <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">condor_submit_dag</span> <span class="pre">A1.dag</span></code>.</p>
+<p>Notes:</p>
+<ol class="arabic simple">
+<li><p>Of course, <code class="docutils literal notranslate"><span class="pre">username</span></code> is your username on Cobalt.</p></li>
+<li><p>You can learn the basics about condor <a class="reference external" href="https://wiki.icecube.wisc.edu/index.php/Condor/Basics">here</a> and dagmans <a class="reference external" href="https://wiki.icecube.wisc.edu/index.php/Condor/DAGMan">here</a>.</p></li>
+<li><p>No one talks about how to cancel jobs on Condor which annoyed me! So here it is: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">condor_rm</span> <span class="pre">job_id</span></code> where <code class="docutils literal notranslate"><span class="pre">job_id</span></code> can be found with <code class="docutils literal notranslate"><span class="pre">condor_q</span> <span class="pre">-nobatch</span></code>. To cancel all the jobs sent through dagman, just kill the <code class="docutils literal notranslate"><span class="pre">.dag</span></code> job.</p></li>
+<li><p>Read through <code class="docutils literal notranslate"><span class="pre">A1.dag</span></code>, <code class="docutils literal notranslate"><span class="pre">ARA_job.sub</span></code>, and <code class="docutils literal notranslate"><span class="pre">ARA_job.sh</span></code> in that order to understand how they interact, then modify them to your needs since many places work for how I set up my directories.</p></li>
+<li><p>If you need to create new dagmans, I added a python code <code class="docutils literal notranslate"><span class="pre">dagman_create.py</span></code> that you can modify and run with <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">python</span> <span class="pre">dagman_create.py</span></code></p></li>
+<li><p>Finally, be sure to create the <code class="docutils literal notranslate"><span class="pre">output</span></code> and <code class="docutils literal notranslate"><span class="pre">data_analysis</span></code> directories called in <code class="docutils literal notranslate"><span class="pre">ARA_job.sh</span></code> before running because Condor is a bit dumb and may not store the data otherwise.</p></li>
+</ol>
+</section>
 </section>
 </section>
 
@@ -511,11 +522,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#birefringence-how-time-differences-are-calculated">Birefringence: How time differences are calculated</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aug-28th-sep-1st">Aug. 28th - Sep. 1st</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aug-28th-sep-1st">Aug. 28th - Sep. 1st</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Summary</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ara-5-station-analysis-a1-simulations">ARA 5-Station Analysis: A1 Simulations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ara-5-station-analysis-a1-simulations">ARA 5-Station Analysis: A1 Simulations</a></li>
 </ul>
   </nav></div>
 
