@@ -72,7 +72,9 @@ Recall that the time differences are in vector `vtimediff`. This is in L2357 so 
 
 1. **ARA 5-Station Analysis:** Updated A1 simulations to use Chiba's antenna model and put files on [GitHub](https://github.com/AlanSalcedo/A1_simulations) to facilitate their use by other people.
 
-2. **GENETIS Building:** Made straightened bicone model 2.5 mm thick and made of ABS plastic using Fusion 360 by recommendation of people from CART.
+2. **ARA 5-Station Analysis:** Addressed some comments on my A1 ATRI/ICRR GitHub PR.
+
+3. **GENETIS Building:** Made straightened bicone model 2.5 mm thick and made of ABS plastic using Fusion 360 by recommendation of people from CART.
 
 ---
 
