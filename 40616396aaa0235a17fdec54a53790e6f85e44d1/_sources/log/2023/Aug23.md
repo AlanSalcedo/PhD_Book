@@ -70,7 +70,11 @@ Recall that the time differences are in vector `vtimediff`. This is in L2357 so 
 
 ## Summary
 
-1. Updated A1 simulations to use Chiba's antenna model and put files on [GitHub](https://github.com/AlanSalcedo/A1_simulations) to facilitate their use by other people.
+1. **ARA 5-Station Analysis:** Updated A1 simulations to use Chiba's antenna model and put files on [GitHub](https://github.com/AlanSalcedo/A1_simulations) to facilitate their use by other people.
+
+2. **GENETIS Building:** Made straightened bicone model 2.5 mm thick and made of ABS plastic using Fusion 360 by recommendation of people from CART.
+
+---
 
 ### ARA 5-Station Analysis: A1 Simulations
 
@@ -88,3 +92,13 @@ Notes:
 4. Read through `A1.dag`, `ARA_job.sub`, and `ARA_job.sh` in that order to understand how they interact, then modify them to your needs since many places work for how I set up my directories.
 5. If you need to create new dagmans, I added a python code `dagman_create.py` that you can modify and run with `$ python dagman_create.py` 
 6. Finally, be sure to create the `output` and `data_analysis` directories called in `ARA_job.sh` before running because Condor is a bit dumb and may not store the data otherwise.
+
+### GENETIS Building Team: Adding Thickness and ABS Plastic to Straightened Bicone Model
+
+The GENETIS team produced an `.stl` file for a bicone antenna with curved sides that later got straightened. This file only produces the shape of the antenna without thickness. My task was to add thickness to it and define its material as ABS plastic so that we can 3D print it at CDME later.
+
+Our group had done antenna modeling using XFdtd in the past. Typically, one can create some shapes and add properties like thickness in there but the main functionality of Xfdtd is to simulate this antenna's response to electromagnetic fields. I tried using XFdtd to give thickness to the model but the capability wasn't active as it is for shapes that you can create internally in XF. I gave up using XF immediately.
+
+People from OSU-CART use Fusion 360 for 3D models which can then be printed, so they recommended me to use it as well. 
+
+In Fusion 360, you can `upload` the `.stl` file, click under the "mesh" tab, click on "prepare" and "Generate Face Groups", select all the parts of our model, and generate face groups with the default values provided. After this, you can click under "modify" then "convert mesh" and under "method" make it prismatic. The main parts of the antenna's body now combine to produce smoother and larger pieces. Then right click on each of these for the "thicken" option to appear. Once you have added the thickness, you can right click on each "MeshBody" under "Bodies" to access "Physical Material", there you can made each piece of the desired material. I just madd all of them ABS plastic.
