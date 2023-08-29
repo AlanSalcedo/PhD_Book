@@ -1,5 +1,7 @@
 # August 2023
 
+---
+
 ## Aug. 21st - Aug. 25th
 
 ### Summary
@@ -13,7 +15,7 @@
 --- 
 
 
-### Birefringence 
+### Birefringence: How time differences are calculated 
 
 
 Amy's [birefringence paper](https://arxiv.org/abs/2110.09015) shows time differences between the two ways emitted from the SPICE transmitter pulsers from different heights arriving at each station in Fig. 9.
@@ -42,7 +44,7 @@ TVector3 `rhat_thisstep` is filled in L1489-1491 as follows:
         `rhat_thisstep[1]=-1.*(res[UZAIRSTEP]-res[0])*yhat[1]`  
         `rhat_thisstep[2]=-1.*(zs[UZAIRSTEP]-zs[0])`
 
-Here vector `res` and `zs` are y- and z- coordinates in a ray and are filled in L1394-1420 by `GetFullDirectRayPath(z0, x1, z1, paramsd[3], res, zs)`. The values `z0`, `x1`, `z1` are the positions of the SPICE pulser and ARA station, and `paramsd[3]` is filled by `GetDirectRayPar(z0,x1,z1)`. Variable `paramsd[3]` contains something calles `lvalueD` regarding some L parameter (**What is this?**). Now TVector3 `yhat` is the horizontal direction from the pulser to the station according to L1470 later turned to a unit vector. **Note: the magnitude of `rhat_thisstep` is set to 1 after `length` is calculated**.
+Here vector `res` and `zs` are y- and z- coordinates in a ray and are filled in L1394-1420 by `GetFullDirectRayPath(z0, x1, z1, paramsd[3], res, zs)`. The values `z0`, `x1`, `z1` are the positions of the SPICE pulser and ARA station, and `paramsd[3]` is filled by `GetDirectRayPar(z0,x1,z1)`. Variable `paramsd[3]` contains something called `lvalueD` regarding some L parameter (**What is this?**). Now TVector3 `yhat` is the horizontal direction from the pulser to the station according to L1470 later turned to a unit vector. **Note: the magnitude of `rhat_thisstep` is set to 1 after `length` is calculated**.
 
 Now let's go back to:
 
@@ -60,4 +62,18 @@ Vector `nvec_thisstep` has size 3 and is filled by `gn1`, `gn2`, and `gn3` in L1
 
 Next, we have to look at some variables used for loops that I have ignored so far, namely `UZAIRSTEP` and `istep`. 
 
-Recall that the time differences are in vector `vtimediff`. This is in L2357 so I finished reading the code of to this point.
+Recall that the time differences are in vector `vtimediff`. This is in L2357 so I finished reading the code up to this point.
+
+---
+
+## Aug. 28th - Sep. 1st
+
+### Summary
+
+1. Updated A1 simulations to use Chiba's antenna model and put files on [GitHub](https://github.com/AlanSalcedo/A1_simulations) to facilitate their use by other people.
+
+## ARA 5-Station Analysis: A1 Simulations
+
+
+
+
