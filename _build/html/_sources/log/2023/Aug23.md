@@ -101,4 +101,13 @@ Our group had done antenna modeling using XFdtd in the past. Typically, one can 
 
 People from OSU-CART use Fusion 360 for 3D models which can then be printed, so they recommended me to use it as well. 
 
-In Fusion 360, you can `upload` the `.stl` file, click under the "mesh" tab, click on "prepare" and "Generate Face Groups", select all the parts of our model, and generate face groups with the default values provided. After this, you can click under "modify" then "convert mesh" and under "method" make it prismatic. The main parts of the antenna's body now combine to produce smoother and larger pieces. Then right click on each of these for the "thicken" option to appear. Once you have added the thickness, you can right click on each "MeshBody" under "Bodies" to access "Physical Material", there you can made each piece of the desired material. I just madd all of them ABS plastic.
+In Fusion 360, you can `upload` the `.stl` file, click under the "mesh" tab, click on "prepare" and "Generate Face Groups", select all the parts of our model, and generate face groups with the default values provided. After this, you can click under "modify" then "convert mesh" and under "method" make it prismatic. The main parts of the antenna's body now combine to produce smoother and larger pieces. Then right click on each of these for the "thicken" option to appear. Once you have added the thickness, you can right click on each "MeshBody" under "Bodies" to access "Physical Material", there you can made each piece of the desired material. I just made all of them ABS plastic.
+
+Here how it looks:
+
+```{image} ../images/straightened_bicone.png
+:alt: straightened_bicone
+:class: bg-primary mb-1
+:width: 300px
+:align: center
+```
