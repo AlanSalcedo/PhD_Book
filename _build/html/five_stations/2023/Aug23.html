@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Five Stations &#8212; PhD Research</title>
+    <title>August 2023 &#8212; PhD Research</title>
   
   
   
@@ -158,11 +158,11 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../topics/birefringence.html">ARA: Birefringence</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../birefringence/2023/Aug23.html">Birefringence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../birefringence/2023/Aug23.html">August 23</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../topics/five_stations.html">ARA: 5-Station Analysis</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Five Stations</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">August 2023</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../topics/operations.html">ARA: Operations Management</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -174,7 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../topics/building.html">GENETIS</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../building/2023/Aug23.html">GENETIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building/2023/Aug23.html">August 2023</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../log.html">Summaries</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -351,7 +351,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -362,11 +364,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Five Stations</h1>
+    <h1>August 2023</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#august-28-sup-th-sup-september-1-sup-st-sup">August 28<sup>th<sup> - September 1<sup>st<sup></sup></sup></sup></sup></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a1-simulations">A1 Simulations</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -376,8 +389,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="five-stations">
-<h1>Five Stations<a class="headerlink" href="#five-stations" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="august-2023">
+<h1>August 2023<a class="headerlink" href="#august-2023" title="Permalink to this heading">#</a></h1>
+<section id="august-28-sup-th-sup-september-1-sup-st-sup">
+<h2>August 28<sup>th<sup> - September 1<sup>st<sup><a class="headerlink" href="#august-28-sup-th-sup-september-1-sup-st-sup" title="Permalink to this heading">#</a></h2>
+<section id="a1-simulations">
+<h3>A1 Simulations<a class="headerlink" href="#a1-simulations" title="Permalink to this heading">#</a></h3>
+<p>For our 5-station analysis, we need simulations for detecting events at each stationusing the most updated signal-chain gain responses, noise models, channel masking, antenna positions and corresponding cable delays. I volunteered to help Mohammad Seikh (from U. Kansas) running simulations for A1.</p>
+<p>Before being able to run simulations on Condor, I needed to modify AraSim to corresctly simulate A1 having an ATRI board in its DAQ box to ensure data digitization in simulations is similar to current real data. All changes are documented <a class="reference external" href="https://aradocs.wipac.wisc.edu/cgi-bin/DocDB/ShowDocument?docid=2869">here</a> and in this <a class="reference external" href="https://github.com/ara-software/AraSim/pull/84">GitHub PR</a>.</p>
+<p>Now running simulations is fairly straightforward using the following <a class="reference external" href="https://github.com/AlanSalcedo/A1_simulations">directory</a>. Just <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> it into your Cobalt account, ssh into <code class="docutils literal notranslate"><span class="pre">username&#64;submitter.icecube.wisc.edu</span></code>, copy any of the <code class="docutils literal notranslate"><span class="pre">batch_run_A1_%key</span></code> directories into <code class="docutils literal notranslate"><span class="pre">/scratch/username</span></code> (<code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">signal</span></code> performs signal + noise simulations, <code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">noise</span></code> performs noise only simulations, and <code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">sim_test</span></code> is made to test smaller runs before sending larger ones), cd into <code class="docutils literal notranslate"><span class="pre">scratch/username/batch_run_A1_%key</span></code> and run dagmans with <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">condor_submit_dag</span> <span class="pre">A1.dag</span></code>.</p>
+<p>Notes:</p>
+<ol class="arabic simple">
+<li><p>Of course, <code class="docutils literal notranslate"><span class="pre">username</span></code> is your username on Cobalt.</p></li>
+<li><p>You can learn the basics about condor <a class="reference external" href="https://wiki.icecube.wisc.edu/index.php/Condor/Basics">here</a> and dagmans <a class="reference external" href="https://wiki.icecube.wisc.edu/index.php/Condor/DAGMan">here</a>.</p></li>
+<li><p>No one talks about how to cancel jobs on Condor which annoyed me! So here it is: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">condor_rm</span> <span class="pre">job_id</span></code> where <code class="docutils literal notranslate"><span class="pre">job_id</span></code> can be found with <code class="docutils literal notranslate"><span class="pre">condor_q</span> <span class="pre">-nobatch</span></code>. To cancel all the jobs sent through dagman, just kill the <code class="docutils literal notranslate"><span class="pre">.dag</span></code> job.</p></li>
+<li><p>Read through <code class="docutils literal notranslate"><span class="pre">A1.dag</span></code>, <code class="docutils literal notranslate"><span class="pre">ARA_job.sub</span></code>, and <code class="docutils literal notranslate"><span class="pre">ARA_job.sh</span></code> in that order to understand how they interact, then modify them to your needs since many places work for how I set up my directories.</p></li>
+<li><p>If you need to create new dagmans, I added a python code <code class="docutils literal notranslate"><span class="pre">dagman_create.py</span></code> that you can modify and run with <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">python</span> <span class="pre">dagman_create.py</span></code></p></li>
+<li><p>Finally, be sure to create the <code class="docutils literal notranslate"><span class="pre">output</span></code> and <code class="docutils literal notranslate"><span class="pre">data_analysis</span></code> directories called in <code class="docutils literal notranslate"><span class="pre">ARA_job.sh</span></code> before running because Condor is a bit dumb and may not store the data otherwise.</p></li>
+</ol>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -438,6 +469,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#august-28-sup-th-sup-september-1-sup-st-sup">August 28<sup>th<sup> - September 1<sup>st<sup></sup></sup></sup></sup></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a1-simulations">A1 Simulations</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
