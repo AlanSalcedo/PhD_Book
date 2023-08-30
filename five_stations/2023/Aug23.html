@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html >
 
   <head>
     <meta charset="utf-8" />
@@ -44,7 +44,6 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -67,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="ARA: Operations Management" href="../../topics/operations.html" />
     <link rel="prev" title="ARA: 5-Station Analysis" href="../../topics/five_stations.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
   
   
@@ -157,7 +156,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes.html">Notes on Astroparticle Physics</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes.html">Notes on UHE Neutrinos</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../notes/introduction.html">Introduction</a></li>
 </ul>
 </li>
@@ -394,11 +393,11 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="august-2023">
-<h1>August 2023<a class="headerlink" href="#august-2023" title="Permalink to this heading">#</a></h1>
+<h1>August 2023<a class="headerlink" href="#august-2023" title="Permalink to this headline">#</a></h1>
 <section id="august-28-sup-th-sup-september-1-sup-st-sup">
-<h2>August 28<sup>th</sup> - September 1<sup>st</sup><a class="headerlink" href="#august-28-sup-th-sup-september-1-sup-st-sup" title="Permalink to this heading">#</a></h2>
+<h2>August 28<sup>th</sup> - September 1<sup>st</sup><a class="headerlink" href="#august-28-sup-th-sup-september-1-sup-st-sup" title="Permalink to this headline">#</a></h2>
 <section id="a1-simulations">
-<h3>A1 Simulations<a class="headerlink" href="#a1-simulations" title="Permalink to this heading">#</a></h3>
+<h3>A1 Simulations<a class="headerlink" href="#a1-simulations" title="Permalink to this headline">#</a></h3>
 <p>For our 5-station analysis, we need simulations for detecting events at each stationusing the most updated signal-chain gain responses, noise models, channel masking, antenna positions and corresponding cable delays. I volunteered to help Mohammad Seikh (from U. Kansas) running simulations for A1.</p>
 <p>Before being able to run simulations on Condor, I needed to modify AraSim to corresctly simulate A1 having an ATRI board in its DAQ box to ensure data digitization in simulations is similar to current real data. All changes are documented <a class="reference external" href="https://aradocs.wipac.wisc.edu/cgi-bin/DocDB/ShowDocument?docid=2869">here</a> and in this <a class="reference external" href="https://github.com/ara-software/AraSim/pull/84">GitHub PR</a>.</p>
 <p>Now running simulations is fairly straightforward using the following <a class="reference external" href="https://github.com/AlanSalcedo/A1_simulations">directory</a>. Just <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> it into your Cobalt account, ssh into <code class="docutils literal notranslate"><span class="pre">username&#64;submitter.icecube.wisc.edu</span></code>, copy any of the <code class="docutils literal notranslate"><span class="pre">batch_run_A1_%key</span></code> directories into <code class="docutils literal notranslate"><span class="pre">/scratch/username</span></code> (<code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">signal</span></code> performs signal + noise simulations, <code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">noise</span></code> performs noise only simulations, and <code class="docutils literal notranslate"><span class="pre">%key</span> <span class="pre">=</span> <span class="pre">sim_test</span></code> is made to test smaller runs before sending larger ones), cd into <code class="docutils literal notranslate"><span class="pre">scratch/username/batch_run_A1_%key</span></code> and run dagmans with <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">condor_submit_dag</span> <span class="pre">A1.dag</span></code>.</p>

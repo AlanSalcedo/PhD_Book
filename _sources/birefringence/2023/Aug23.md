@@ -49,3 +49,7 @@ Vector `nvec_thisstep` has size 3 and is filled by `gn1`, `gn2`, and `gn3` in L1
 Next, we have to look at some variables used for loops that I have ignored so far, namely `UZAIRSTEP` and `istep`.
 
 Recall that the time differences are in vector `vtimediff`. This is in L2357 so I finished reading the code up to this point.
+
+## August 26<sup>th</sup> - September 1<sup>st</sup>
+
+
