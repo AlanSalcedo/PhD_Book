@@ -1,4 +1,4 @@
-# August 23
+# August 2023
 
 ## August 21<sup>st</sup> - August 25<sup>th</sup>
 
