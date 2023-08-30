@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 chapters:
+- file: notes.md
+  sections:
+  - file: notes/introduction.md 
 - file: topics/birefringence.md 
   sections: 
   - file: birefringence/2023/Aug23.md
@@ -22,6 +25,3 @@ chapters:
 - file: log.md
   sections:
   - file: log/2023/Aug23.md 
-- file: notes.md
-  sections:
-  - file: notes/introduction.md 
