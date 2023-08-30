@@ -2,9 +2,7 @@
 
 ---
 
-## August 21<sup>st</sup> - August 25<sup>th</sup>
-
-### Summary
+### August 21<sup>st</sup> - August 25<sup>th</sup>
 
 1. **ARA Birefringence:** Worked through `cpol.cc` to find how time differences in rays are calculated. I think that I have studied this completely. Notes about this are written on the Birefringence section below.  
 
@@ -14,9 +12,7 @@
 
 --- 
 
-## August 28<sup>th</sup> - September 1<sup>st</sup>
-
-## Summary
+### August 28<sup>th</sup> - September 1<sup>st</sup>
 
 1. **ARA 5-Station Analysis:** Updated A1 simulations to use Chiba's antenna model and put files on [GitHub](https://github.com/AlanSalcedo/A1_simulations) to facilitate their use by other people.
 
