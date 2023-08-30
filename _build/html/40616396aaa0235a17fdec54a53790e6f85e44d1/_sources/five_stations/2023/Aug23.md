@@ -1,6 +1,6 @@
 # August 2023
 
-## August 28<sup>th<sup> - September 1<sup>st<sup>
+## August 28<sup>th</sup> - September 1<sup>st</sup>
 
 ### A1 Simulations
 

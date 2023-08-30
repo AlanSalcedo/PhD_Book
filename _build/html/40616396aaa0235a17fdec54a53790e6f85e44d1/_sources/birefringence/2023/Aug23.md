@@ -1,6 +1,6 @@
 # August 23
 
-## August 21<sup>st<sup> - August 25<sup>th<sup>
+## August 21<sup>st</sup> - August 25<sup>th</sup>
 
 ### How to Calculate Time Differences 
 
