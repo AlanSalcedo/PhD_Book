@@ -1,1 +1,0 @@
-# IceCube/ARA Coincidences
