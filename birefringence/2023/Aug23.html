@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Birefringence &#8212; PhD Research</title>
+    <title>August 23 &#8212; PhD Research</title>
   
   
   
@@ -158,11 +158,11 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../topics/birefringence.html">ARA: Birefringence</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Birefringence</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">August 23</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../topics/five_stations.html">ARA: 5-Station Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../five_stations/2023/Aug23.html">Five Stations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../five_stations/2023/Aug23.html">August 2023</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../topics/operations.html">ARA: Operations Management</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -174,7 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../topics/building.html">GENETIS</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../building/2023/Aug23.html">GENETIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building/2023/Aug23.html">August 2023</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../log.html">Summaries</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -351,7 +351,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -362,11 +364,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Birefringence</h1>
+    <h1>August 23</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#august-21-sup-st-sup-august-25-sup-th-sup">August 21<sup>st<sup> - August 25<sup>th<sup></sup></sup></sup></sup></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-calculate-time-differences">How to Calculate Time Differences</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -376,8 +389,52 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="birefringence">
-<h1>Birefringence<a class="headerlink" href="#birefringence" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="august-23">
+<h1>August 23<a class="headerlink" href="#august-23" title="Permalink to this heading">#</a></h1>
+<section id="august-21-sup-st-sup-august-25-sup-th-sup">
+<h2>August 21<sup>st<sup> - August 25<sup>th<sup><a class="headerlink" href="#august-21-sup-st-sup-august-25-sup-th-sup" title="Permalink to this heading">#</a></h2>
+<section id="how-to-calculate-time-differences">
+<h3>How to Calculate Time Differences<a class="headerlink" href="#how-to-calculate-time-differences" title="Permalink to this heading">#</a></h3>
+<p>Amy’s <a class="reference external" href="https://arxiv.org/abs/2110.09015">birefringence paper</a> shows time differences between the two ways emitted from the SPICE transmitter pulsers from different heights arriving at each station in Fig. 9.</p>
+<p>Fig. 9 -and all other figures- is produced by <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> in ~L4484 and called <code class="docutils literal notranslate"><span class="pre">h9</span></code>. Then, this is filled with information from TGraph <code class="docutils literal notranslate"><span class="pre">g_sumphase</span></code>. <strong>Time differences</strong> are contained in <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code> inside <code class="docutils literal notranslate"><span class="pre">g_sumphase</span></code> as seen in L3540.</p>
+<p>The vector <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code> has dimension of number of stations and it is filled in L2357 with:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">vtimediff[i].push_back(sumphase/(PI)*1./freq*1.E9)</span></code></p>
+</div></blockquote>
+<p>with time differences in ns. Then double <code class="docutils literal notranslate"><span class="pre">sumphase</span></code> is calculated in L2214 as:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">sumphase=deltantimeslength_alongpath*PI/TMath::C()*freq</span></code></p>
+</div></blockquote>
+<p>where <code class="docutils literal notranslate"><span class="pre">freq</span></code> is defined in L185 as 160 MHz (<strong>also read in <code class="docutils literal notranslate"><span class="pre">if-statement</span></code> in L201?</strong>), <code class="docutils literal notranslate"><span class="pre">TMath::C()</span></code> is the speed of light in vacuum (<strong>Why not use <code class="docutils literal notranslate"><span class="pre">CLIGHT</span></code> in L39?</strong>). We keep going with <code class="docutils literal notranslate"><span class="pre">deltantimeslength_alongpath</span></code> being calculated in L2159 as:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">deltantimeslength_alongpath+=deltan_alongpath*length*notflipped</span></code></p>
+</div></blockquote>
+<p>where length is given in L1560 by:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">double</span> <span class="pre">length=rhat_thisstep.Mag()</span></code></p>
+</div></blockquote>
+<p>TVector3 <code class="docutils literal notranslate"><span class="pre">rhat_thisstep</span></code> is filled in L1489-1491 as follows:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">rhat_thisstep[0]=-1.*(res[UZAIRSTEP]-res[0])*yhat[0]</span></code>
+<code class="docutils literal notranslate"><span class="pre">rhat_thisstep[1]=-1.*(res[UZAIRSTEP]-res[0])*yhat[1]</span></code>
+<code class="docutils literal notranslate"><span class="pre">rhat_thisstep[2]=-1.*(zs[UZAIRSTEP]-zs[0])</span></code></p>
+</div></blockquote>
+<p>Here vector <code class="docutils literal notranslate"><span class="pre">res</span></code> and <code class="docutils literal notranslate"><span class="pre">zs</span></code> are y- and z- coordinates in a ray and are filled in L1394-1420 by <code class="docutils literal notranslate"><span class="pre">GetFullDirectRayPath(z0,</span> <span class="pre">x1,</span> <span class="pre">z1,</span> <span class="pre">paramsd[3],</span> <span class="pre">res,</span> <span class="pre">zs)</span></code>. The values <code class="docutils literal notranslate"><span class="pre">z0</span></code>, <code class="docutils literal notranslate"><span class="pre">x1</span></code>, <code class="docutils literal notranslate"><span class="pre">z1</span></code> are the positions of the SPICE pulser and ARA station, and <code class="docutils literal notranslate"><span class="pre">paramsd[3]</span></code> is filled by <code class="docutils literal notranslate"><span class="pre">GetDirectRayPar(z0,x1,z1)</span></code>. Variable <code class="docutils literal notranslate"><span class="pre">paramsd[3]</span></code> contains something called <code class="docutils literal notranslate"><span class="pre">lvalueD</span></code> regarding some L parameter (<strong>What is this?</strong>). Now TVector3 <code class="docutils literal notranslate"><span class="pre">yhat</span></code> is the horizontal direction from the pulser to the station according to L1470 later turned to a unit vector. <strong>Note: the magnitude of <code class="docutils literal notranslate"><span class="pre">rhat_thisstep</span></code> is set to 1 after <code class="docutils literal notranslate"><span class="pre">length</span></code> is calculated</strong>.</p>
+<p>Now let’s go back to:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">deltantimeslength_alongpath+=deltan_alongpath*length*notflipped</span></code></p>
+</div></blockquote>
+<p>the value <code class="docutils literal notranslate"><span class="pre">notflipped</span></code> is given by the function <code class="docutils literal notranslate"><span class="pre">Flipped(theta_e1,</span> <span class="pre">theta_e1_start)</span></code> in L2156(<strong>What is this telling us?</strong>) where <code class="docutils literal notranslate"><span class="pre">theta_e1</span></code> is given by <code class="docutils literal notranslate"><span class="pre">getManyAnglesontheClock()</span></code> in L2130 (<strong>This deals with rotations so we could ignore flipping for work on time differences, right?</strong>). Finally, we’ll be looking at <code class="docutils literal notranslate"><span class="pre">deltan_alongpath</span></code> which is calculated in L1576 as:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">deltan_alongpath=getDeltaN(BIAXIAL,nvec_thisstep,rhat_thisstep,angle_iceflow,n_e1,n_e2,p_e1,p_e2)</span></code></p>
+</div></blockquote>
+<p>where BIAXIAL is a configuration value specified by the user (<strong>I should add this to <code class="docutils literal notranslate"><span class="pre">Settings.cc</span></code> in AraSim</strong>), <code class="docutils literal notranslate"><span class="pre">nvec_thisstep</span></code> contains the values defining the indicatrix, <code class="docutils literal notranslate"><span class="pre">angle_iceflow</span></code> is defined in L273 by <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">double</span> <span class="pre">angle_iceflow=(36.+</span> <span class="pre">(46./60.)</span> <span class="pre">+</span> <span class="pre">(23./3600.)</span> <span class="pre">+</span> <span class="pre">90.)/DEGRAD</span></code>, and variables <code class="docutils literal notranslate"><span class="pre">n_e1</span></code>, <code class="docutils literal notranslate"><span class="pre">n_e2</span></code>, <code class="docutils literal notranslate"><span class="pre">p_e1</span></code>, <code class="docutils literal notranslate"><span class="pre">p_e2</span></code> are the indices of refraction felt by the two rays and their polarizations. We need to go back and look at <code class="docutils literal notranslate"><span class="pre">nvec_thisstep</span></code> separately.</p>
+<p>Vector <code class="docutils literal notranslate"><span class="pre">nvec_thisstep</span></code> has size 3 and is filled by <code class="docutils literal notranslate"><span class="pre">gn1</span></code>, <code class="docutils literal notranslate"><span class="pre">gn2</span></code>, and <code class="docutils literal notranslate"><span class="pre">gn3</span></code> in L1483-1485. Now, for instance, <code class="docutils literal notranslate"><span class="pre">gn1</span></code> is a TGraph of size <code class="docutils literal notranslate"><span class="pre">n1vec.size()</span></code> filled with <code class="docutils literal notranslate"><span class="pre">vdepths_n1[0]</span></code> and <code class="docutils literal notranslate"><span class="pre">n1vec[0]</span></code>. Finally, vector <code class="docutils literal notranslate"><span class="pre">n1vec</span></code> is filled between lines L649-783 by loading data from <code class="docutils literal notranslate"><span class="pre">n1.txt</span></code> after some data-conditioning and smoothing.</p>
+<p><strong>This is it for tracing how time differences are calculated, right?</strong></p>
+<p>Next, we have to look at some variables used for loops that I have ignored so far, namely <code class="docutils literal notranslate"><span class="pre">UZAIRSTEP</span></code> and <code class="docutils literal notranslate"><span class="pre">istep</span></code>.</p>
+<p>Recall that the time differences are in vector <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code>. This is in L2357 so I finished reading the code up to this point.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -438,6 +495,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#august-21-sup-st-sup-august-25-sup-th-sup">August 21<sup>st<sup> - August 25<sup>th<sup></sup></sup></sup></sup></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-calculate-time-differences">How to Calculate Time Differences</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
