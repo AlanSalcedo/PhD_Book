@@ -14,10 +14,16 @@
 
 ### August 26<sup>th</sup> - September 1<sup>st</sup>
 
-1. **ARA 5-Station Analysis:** Updated A1 simulations to use Chiba's antenna model and put files on [GitHub](https://github.com/AlanSalcedo/A1_simulations) to facilitate their use by other people.
+1. **ARA 5-Station Analysis:** Updated A1 simulations to use Chiba's antenna model and put files on [GitHub](https://github.com/AlanSalcedo/A1_simulations) to facilitate their use by other people. Currently running tests before running all the simulations again.
 
 2. **ARA 5-Station Analysis:** Addressed some comments on my A1 ATRI/ICRR GitHub PR.
 
 3. **GENETIS Building:** Made straightened bicone model 2.5 mm thick and made of ABS plastic using Fusion 360 by recommendation of people from CART.
+
+4. **GENETIS Building:** Tried adding a layer of copper to the antenna. I haven't figured it out. Jack T. sent me a model of the curved bicone with thickness. 
+
+5. **ARA Birefringence:** Added `Birefringence` and `BIAXIAL` settings to `Settingg.cc`. Created a function in `Birefringence.cc` called `Time_Diff_TwoRays()` which calculates the time difference between two rays in birefringence. For this, I conditiones `getDeltaN()` to work properly also in `Birefringence.cc`. 
+
+6. **ARA Birefringence:** Talked to Justin. Part of my plan is to simulate SPICE pulser events with vertical polarization at the interaction vertex. Adding this capablity in AraSim is part of Justin's work. Also, I have a list of items to see the two pulses in the waveform, including making corresponding modifications in `Report.cc`.
 
 ---

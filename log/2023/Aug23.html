@@ -404,9 +404,12 @@ document.write(`
 <section id="august-26-sup-th-sup-september-1-sup-st-sup">
 <h2>August 26<sup>th</sup> - September 1<sup>st</sup><a class="headerlink" href="#august-26-sup-th-sup-september-1-sup-st-sup" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p><strong>ARA 5-Station Analysis:</strong> Updated A1 simulations to use Chiba’s antenna model and put files on <a class="reference external" href="https://github.com/AlanSalcedo/A1_simulations">GitHub</a> to facilitate their use by other people.</p></li>
+<li><p><strong>ARA 5-Station Analysis:</strong> Updated A1 simulations to use Chiba’s antenna model and put files on <a class="reference external" href="https://github.com/AlanSalcedo/A1_simulations">GitHub</a> to facilitate their use by other people. Currently running tests before running all the simulations again.</p></li>
 <li><p><strong>ARA 5-Station Analysis:</strong> Addressed some comments on my A1 ATRI/ICRR GitHub PR.</p></li>
 <li><p><strong>GENETIS Building:</strong> Made straightened bicone model 2.5 mm thick and made of ABS plastic using Fusion 360 by recommendation of people from CART.</p></li>
+<li><p><strong>GENETIS Building:</strong> Tried adding a layer of copper to the antenna. I haven’t figured it out. Jack T. sent me a model of the curved bicone with thickness.</p></li>
+<li><p><strong>ARA Birefringence:</strong> Added <code class="docutils literal notranslate"><span class="pre">Birefringence</span></code> and <code class="docutils literal notranslate"><span class="pre">BIAXIAL</span></code> settings to <code class="docutils literal notranslate"><span class="pre">Settingg.cc</span></code>. Created a function in <code class="docutils literal notranslate"><span class="pre">Birefringence.cc</span></code> called <code class="docutils literal notranslate"><span class="pre">Time_Diff_TwoRays()</span></code> which calculates the time difference between two rays in birefringence. For this, I conditiones <code class="docutils literal notranslate"><span class="pre">getDeltaN()</span></code> to work properly also in <code class="docutils literal notranslate"><span class="pre">Birefringence.cc</span></code>.</p></li>
+<li><p><strong>ARA Birefringence:</strong> Talked to Justin. Part of my plan is to simulate SPICE pulser events with vertical polarization at the interaction vertex. Adding this capablity in AraSim is part of Justin’s work. Also, I have a list of items to see the two pulses in the waveform, including making corresponding modifications in <code class="docutils literal notranslate"><span class="pre">Report.cc</span></code>.</p></li>
 </ol>
 <hr class="docutils" />
 </section>

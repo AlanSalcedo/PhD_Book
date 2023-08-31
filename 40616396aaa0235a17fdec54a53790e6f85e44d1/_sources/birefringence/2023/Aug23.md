@@ -50,6 +50,3 @@ Next, we have to look at some variables used for loops that I have ignored so fa
 
 Recall that the time differences are in vector `vtimediff`. This is in L2357 so I finished reading the code up to this point.
 
-## August 26<sup>th</sup> - September 1<sup>st</sup>
-
-
