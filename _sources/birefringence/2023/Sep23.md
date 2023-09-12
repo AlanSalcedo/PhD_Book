@@ -26,6 +26,8 @@ Looking at `cpol.cc` (L235), we see that the station and SPICE pulser coodinates
 :align: center
 ```
 
+
+
 Now the most important part. Our principal axes n<sub>$\alpha$</sub>, n<sub>$\beta$</sub>, and n<sub>$\gamma$</sub> are defined so that n<sub>$\alpha$</sub> is aligned with the direction of the ice flow (N36° 46'23"W in northing-easting coordinates) and n<sub>$\alpha$</sub> is aligned with the vertical direction. 
 
 When figuring out how the ray intersects the indicatrix at a given point, we need the angles that `rhat_thisstep` makes with respect to a coordinate system having the x-axis parallel to the iceflow. This (and getting the polarization angles of the two rays in this coordinate system) is done by Amy in `getDeltaN()` using the variable `angle_iceflow` defined in northing-easting coordinates.
