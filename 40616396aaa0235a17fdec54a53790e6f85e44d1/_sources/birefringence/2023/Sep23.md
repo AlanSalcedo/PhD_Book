@@ -18,4 +18,4 @@ Recall that `yhat` is a horizontal unit vector pointing from the SPICE pulser to
 
 Looking at `cpol.cc` (L235), we see that the station and SPICE pulser coodinates are defined in the **surveyor's** coordinate system (Grid North, Grid East or Northing, Easting, **right?**).
 
-Now the most important part. Our principal axes `n<sub>$\alpha$</sub>`, `n<sub>$\beta$</sub>`, and `n<sub>$\gamma$</sub>` are defined so that `n<sub>$\alpha$</sub>` is aligned with the direction of the ice flow (N36°)
+Now the most important part. Our principal axes n<sub>$\alpha$</sub>, n<sub>$\beta$</sub>, and n<sub>$\gamma$</sub> are defined so that n<sub>$\alpha$</sub> is aligned with the direction of the ice flow (N36°)
