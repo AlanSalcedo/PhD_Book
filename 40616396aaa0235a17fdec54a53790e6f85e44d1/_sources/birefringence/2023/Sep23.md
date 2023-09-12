@@ -25,7 +25,7 @@ Looking at `cpol.cc` (L235), we see that the station and SPICE pulser coodinates
 :width: 750px
 :align: center
 ```
-<br><br>
+<br>
 
 Now the most important part. Our principal axes n<sub>$\alpha$</sub>, n<sub>$\beta$</sub>, and n<sub>$\gamma$</sub> are defined so that n<sub>$\alpha$</sub> is aligned with the direction of the ice flow (N36° 46'23"W in northing-easting coordinates) and n<sub>$\alpha$</sub> is aligned with the vertical direction. 
 
