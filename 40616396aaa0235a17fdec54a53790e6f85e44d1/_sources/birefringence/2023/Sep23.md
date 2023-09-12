@@ -22,7 +22,7 @@ Looking at `cpol.cc` (L235), we see that the station and SPICE pulser coodinates
 ```{image} ../images/birefringence_coordinates.png
 :alt: birefringence_coordinates
 :class: bg-primary mb-1
-:width: 500px
+:width: 800px
 :align: center
 ```
 
