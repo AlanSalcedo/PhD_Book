@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -66,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="September 2023" href="Sep23.html" />
     <link rel="prev" title="ARA: Birefringence" href="../../topics/birefringence.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -396,11 +397,11 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="august-2023">
-<h1>August 2023<a class="headerlink" href="#august-2023" title="Permalink to this headline">#</a></h1>
+<h1>August 2023<a class="headerlink" href="#august-2023" title="Permalink to this heading">#</a></h1>
 <section id="august-21-sup-st-sup-august-25-sup-th-sup">
-<h2>August 21<sup>st</sup> - August 25<sup>th</sup><a class="headerlink" href="#august-21-sup-st-sup-august-25-sup-th-sup" title="Permalink to this headline">#</a></h2>
+<h2>August 21<sup>st</sup> - August 25<sup>th</sup><a class="headerlink" href="#august-21-sup-st-sup-august-25-sup-th-sup" title="Permalink to this heading">#</a></h2>
 <section id="how-to-calculate-time-differences">
-<h3>How to Calculate Time Differences<a class="headerlink" href="#how-to-calculate-time-differences" title="Permalink to this headline">#</a></h3>
+<h3>How to Calculate Time Differences<a class="headerlink" href="#how-to-calculate-time-differences" title="Permalink to this heading">#</a></h3>
 <p>Amy’s <a class="reference external" href="https://arxiv.org/abs/2110.09015">birefringence paper</a> shows time differences between the two ways emitted from the SPICE transmitter pulsers from different heights arriving at each station in Fig. 9.</p>
 <p>Fig. 9 -and all other figures- is produced by <code class="docutils literal notranslate"><span class="pre">cpol.cc</span></code> in ~L4484 and called <code class="docutils literal notranslate"><span class="pre">h9</span></code>. Then, this is filled with information from TGraph <code class="docutils literal notranslate"><span class="pre">g_sumphase</span></code>. <strong>Time differences</strong> are contained in <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code> inside <code class="docutils literal notranslate"><span class="pre">g_sumphase</span></code> as seen in L3540.</p>
 <p>The vector <code class="docutils literal notranslate"><span class="pre">vtimediff</span></code> has dimension of number of stations and it is filled in L2357 with:</p>
